@@ -45,17 +45,19 @@
 
             <Label Grid.Row="1"
                 IsHitTestVisible="False"
-                   Content="Buscar tareas..."
+                   Content=""
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   Margin="0 0 265 0 "></Label>
-            <Button
+                   Margin="0 0 265 0 "
+                   Visibility="Collapsed"
+                   Foreground="{StaticResource Borders}"></Label>
+            <Button Style="{StaticResource SearchButton}"
                     Grid.Row="1"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     Margin="0 0 40 0 "
-                    Padding="16"
-                    Background="White"
+                    Padding="16"                    
+                    
                     BorderBrush="White"
                     Width="30"
                     Height="30">
@@ -73,6 +75,28 @@
                 <Path Data="{StaticResource SearchIcon}"></Path>
 
             </Viewbox>-->
+
+            <ListView Grid.Row="2"
+                      Background="Transparent"
+                      Margin="0 20"></ListView>
+            
+            
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="230"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+            </Grid.RowDefinitions>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
         </Grid>
         <Rectangle Fill="{StaticResource TaskStatusBackground}" Grid.Column="3"></Rectangle>
 
