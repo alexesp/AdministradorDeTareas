@@ -4,13 +4,15 @@
    
     
     <SolidColorBrush x:Key="AccentDark" Color="#FF164863"></SolidColorBrush>
-    <SolidColorBrush x:Key="AccentDarkOver" Color="#FF164863"></SolidColorBrush>
-    <SolidColorBrush x:Key="AccentDarkClick" Color="#FF164863"></SolidColorBrush>
+    <SolidColorBrush x:Key="AccentDarkOver" Color="#FF396A84"></SolidColorBrush>
+    <SolidColorBrush x:Key="AccentDarkClick" Color="#FF66A3C5"></SolidColorBrush>
     <SolidColorBrush x:Key="TaskListBackground" Color="#FFECECEC"></SolidColorBrush>
     <SolidColorBrush x:Key="WindowBackground" Color="#FFFFFFFF"></SolidColorBrush>
     <SolidColorBrush x:Key="TaskStatusBackground" Color="#FFF6F6F6"></SolidColorBrush>
     <SolidColorBrush x:Key="DefaultText" Color="#FF474747"></SolidColorBrush>
     <SolidColorBrush x:Key="OnAccent" Color="#FFFFFFFF"></SolidColorBrush>
+
+    <SolidColorBrush x:Key="Borders" Color="#FFCCCCCC"></SolidColorBrush>
     
     
     <SolidColorBrush x:Key="Importance-Low" Color="#FF0CAFF4"></SolidColorBrush>

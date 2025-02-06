@@ -113,9 +113,19 @@
   <ItemGroup>
     <Folder Include="Assets\Files\Data\" />
     <Folder Include="Assets\Files\Txt\" />
-    <Folder Include="Assets\Images\" />
     <Folder Include="DataService\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\buscar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\buscar-48.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Assets\Images\Xpw4Qg01.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

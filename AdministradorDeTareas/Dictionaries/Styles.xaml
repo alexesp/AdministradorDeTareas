@@ -13,7 +13,7 @@
         <Setter Property="Foreground" Value="{StaticResource OnAccent}"></Setter>
         <Setter Property="BorderThickness" Value="0"></Setter>
         <Setter Property="BorderBrush" Value="Transparent"></Setter>
-        <Setter Property="Padding" Value="5"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -35,6 +35,55 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-                
+       
+    </Style>
+
+    <Style x:Key="SearchButton" TargetType="Button">
+       
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"></Setter>
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <Style x:Key="TaskListSearchBox" TargetType="TextBox">
+        <Setter Property="Background" Value="{StaticResource Borders}"></Setter>
+        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="Padding" Value="20 0 50 0"></Setter>
+        <Setter Property="Cursor" Value="IBeam"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="3">
+                        <ScrollViewer x:Name="PART_ContentHost" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            
+                        </ScrollViewer>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource AccentDarkOver}"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>
