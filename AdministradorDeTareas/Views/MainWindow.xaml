@@ -61,7 +61,7 @@
                     BorderBrush="White"
                     Width="30"
                     Height="30">
-               
+
 
 
             </Button>
@@ -78,27 +78,66 @@
 
             <ListView Grid.Row="2"
                       Background="Transparent"
-                      Margin="0 20"></ListView>
-            
-            
+                      Margin="0 20"
+                      BorderBrush="Transparent"></ListView>
+
+
         </Grid>
 
-        <Grid Grid.Column="2">
+        <Grid Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,-409,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="230"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="60"></RowDefinition>
             </Grid.RowDefinitions>
-        
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
-            </Grid.RowDefinitions>
+
+            <Grid Grid.Column="1" Margin="20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Tareas"
+                           Style="{StaticResource Title}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center">
+                </TextBlock>
+
+                <Border HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Padding="20 5"
+                        CornerRadius="5"
+                        Background="{StaticResource OnAccent}">
+                    <TextBlock Text="Critical"
+                               Foreground="Black"
+                               FontWeight="Normal"
+                               FontSize="16"
+                               ></TextBlock>
+                </Border>
+                <ScrollViewer Grid.Row="1"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                <TextBlock Text="Es el campo de detalles"
+                           FontSize="16"
+                           
+                           ></TextBlock>
+                </ScrollViewer>
+            </Grid>
         </Grid>
-        </Grid>
-        <Rectangle Fill="{StaticResource TaskStatusBackground}" Grid.Column="3"></Rectangle>
+        <!--<Grid Grid.Column="3">
+            <Rectangle Fill="{StaticResource TaskStatusBackground}" Margin="443,0,-506,0" RenderTransformOrigin="0.5,0.5" >
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>-->
+
 
     </Grid>
 </Window>
